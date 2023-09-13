@@ -1137,6 +1137,10 @@ section {
   color: #3fbbc0;
 }
 
+.departments h6{
+  font-weight: bolder;
+}
+
 .departments .tab-pane p {
   color: #777777;
 }
