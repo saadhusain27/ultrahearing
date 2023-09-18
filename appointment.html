@@ -80,7 +80,7 @@
           <h2>Book an Appointment</h2>
         </div>
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form" data-aos="fade-up"
+        <form id="appointmentform" role="form" class="php-email-form" data-aos="fade-up"
           data-aos-delay="100">
           <div class="row">
             <div class="col-md-3 form-group">
@@ -89,13 +89,13 @@
             <div class="col-md-3 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
             </div>
-            <div class="col-md-3 form-group mt-3 mt-md-0">
+            <!-- <div class="col-md-3 form-group mt-3 mt-md-0">
               <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
             </div>
             <div class="col-md-3 form-group mt-3 mt-md-0">
               <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date"
                 required>
-            </div>
+            </div> -->
           </div>
 
           <div class="form-group mt-3">
@@ -103,8 +103,9 @@
           </div>
           <div class="my-3">
             <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            <div id="error-message" class="error-message">Unable to book appointment.<br>
+               Please call <u>437-499-3793</u>  or mail us at <u>info@ultrahearing.ca</u> directly.</div>
+            <div id="sent-message" class="sent-message">Your appointment request has been sent successfully. We will connect with you shortly. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit">Book an Appointment</button></div>
         </form>
@@ -171,10 +172,11 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/fetch-upload-data.js"></script>
 
 </body>
 
