@@ -6,7 +6,7 @@ document.getElementById("appointmentform").addEventListener("submit", function (
 function getData(form) {
     var formData = new FormData(form);
     let obj = Object.fromEntries(formData)
-    const uri = 'http://jsonplaceholder.typicode.com/';
+    const uri = 'https://contactultrahearing-dhcmuqnkaq-uc.a.run.app';
     
     let options = {
         method: 'POST',
