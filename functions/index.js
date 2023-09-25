@@ -61,6 +61,7 @@ function contactMe(body) {
   let emailOptions = {};
   emailOptions.to = body.email;
   emailOptions.from = adminEmail;
+  emailOptions.bcc = adminEmail;
   emailOptions.subject = body.name + " - " + body.subject;
   emailOptions.html = body.message;
 
