@@ -5,25 +5,9 @@ document.getElementById("appointmentform").addEventListener("submit", function (
 
 function getData(form) {
     var formData = new FormData(form);
-    // var pair = formData.entries();
-    // let name = pair[1];
-    // let from = pair[2];
-    // console.log(name)
-    // console.log(from)
-
     let obj = Object.fromEntries(formData)
-    // let phone = pair[3];
-    // let date = pair[4];
-    // let msg = pair[5];
-
-    // let jsonBody = JSON.stringify({
-    //     title: name,
-    //     body: from,
-    //     userId: 1,
-    // });
-    const root = 'http://jsonplaceholder.typicode.com/';
-    let uri = root + 'posts';
-
+    const uri = 'http://jsonplaceholder.typicode.com/';
+    
     let options = {
         method: 'POST',
         mode: 'cors',
@@ -42,7 +26,6 @@ function getData(form) {
             }
         })
         .then((j) => {
-            // console.log(j);
             document.getElementById("sent-message").style.display = "block"
         })
         .catch((err) => {
@@ -50,19 +33,3 @@ function getData(form) {
             console.log('ERROR:', err.message);
         });
 }
-
-
-function book() {
-
-
-
-
-    // let formdata = new FormData();
-    // formdata.append("userId", 3);
-    // formdata.append('title','This is my title');
-    // formdata.append('body','This is the body text of the post');
-
-
-
-}
-
