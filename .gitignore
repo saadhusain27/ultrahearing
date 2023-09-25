@@ -9,6 +9,11 @@ firebase-debug.*.log*
 
 # Firebase cache
 .firebase/
+public/
+.DS_Store
+.firebaserc
+firebase.json
+database.rules.json
 
 # Firebase config
 
