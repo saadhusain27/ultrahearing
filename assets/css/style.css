@@ -454,14 +454,13 @@ h6 {
 
 #hero .container {
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 40px;
-  border-top: 4px solid #3fbbc0;
   position: inherit;
-  right: 5px;
-  width: 40%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 @media (max-width: 1200px) {
@@ -1118,8 +1117,9 @@ section {
 
 .departments .tab-pane img {
   float: left;
-  max-width: 300px;
+  max-width: 250px;
   padding: 0 15px 15px 0;
+  max-height: 150px;
 }
 
 @media (max-width: 768px) {
