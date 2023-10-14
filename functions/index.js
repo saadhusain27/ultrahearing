@@ -45,9 +45,9 @@ exports.contactUltraHearing = onRequest((request, response) => {
 
 function bookAppointment(body) {
   let emailOptions = {};
-  emailOptions.to = body.email;
+  emailOptions.to = body.email, adminEmail;
   emailOptions.from = adminEmail;
-  emailOptions.subject = "Request for appointment at Ultra Hearing on " + body.date;
+  emailOptions.subject = "Request for appointment at Ultra Hearing on " + body.date + " from " +body.name;
   emailOptions.html = "Hello " + body.name + "<br><br>" + 
   "Thank you for choosing Ultra Hearing Clinic <br><br>" + 
   "Request Details: <br> Appointment date : " + body.date + "<br> Contact No : " + body.phone + "<br> Message: " + body.message + "<br><br>" +
@@ -58,7 +58,7 @@ function bookAppointment(body) {
 
 function contactMe(body) {
   let emailOptions = {};
-  emailOptions.to = body.email;
+  emailOptions.to = body.email,adminEmail;
   emailOptions.from = adminEmail;
   emailOptions.subject = body.name + " - " + body.subject;
   emailOptions.html = body.message;
