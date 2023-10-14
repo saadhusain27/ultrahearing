@@ -50,7 +50,7 @@ function bookAppointment(body) {
   emailOptions.subject = "Request for appointment at Ultra Hearing on " + body.date;
   emailOptions.html = "Hello " + body.name + "<br><br>" + 
   "Thank you for choosing Ultra Hearing Clinic <br><br>" + 
-  "Request Details: <br> Appointment date : " + body.date + "<br> Contact No : " + body.phone + "Message: " + body.message + "<br><br>" +
+  "Request Details: <br> Appointment date : " + body.date + "<br> Contact No : " + body.phone + "<br> Message: " + body.message + "<br><br>" +
   "We will connect with you shortly to confirm appointment. <br><br> Regards, <br> Ultra Hearing Clinic";
 
   return emailOptions;
