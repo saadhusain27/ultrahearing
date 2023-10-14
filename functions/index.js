@@ -47,7 +47,6 @@ function bookAppointment(body) {
   let emailOptions = {};
   emailOptions.to = body.email;
   emailOptions.from = adminEmail;
-  emailOptions.bcc = adminEmail;
   emailOptions.subject = "Request for appointment at Ultra Hearing on " + body.date;
   emailOptions.html = "Hello " + body.name + "<br><br>" + 
   "Thank you for choosing Ultra Hearing Clinic <br><br>" + 
@@ -61,7 +60,6 @@ function contactMe(body) {
   let emailOptions = {};
   emailOptions.to = body.email;
   emailOptions.from = adminEmail;
-  emailOptions.bcc = adminEmail;
   emailOptions.subject = body.name + " - " + body.subject;
   emailOptions.html = body.message;
 
